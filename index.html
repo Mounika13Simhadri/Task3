@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <br><br><br>
+        <h4>S&nbsp;&nbsp;P&nbsp;&nbsp;L&nbsp;&nbsp;I<br>T&nbsp;&nbsp;T&nbsp;&nbsp;E&nbsp;&nbsp;R</h4>
+        <form class="form1">
+            <div class="inptcont">
+                <br>
+                <br>
+                <i class="fa-solid fa-user"></i>
+                <label id="l1" for="bill">Bill</label>  <br><br>
+                <img id="img1" src="images/dollar.png">
+                <input type="text" id="txt1" placeholder="0" ><br><br><br>
+                <label id="l2" for="tip">Select Tip %</label> <br><br>
+                <button id="b5" onclick="five(event)">5%</button>
+                <button id="b10" onclick="ten(event)">10%</button>
+                <button id="b15" onclick="fifteen(event)">15%</button><br>
+                <button id="b25" onclick="twentyfive(event)">25%</button>
+                <button id="b50" onclick="fifty(event)">50%</button>
+                <input type="text" id="cb" placeholder="Custom" onchange="custom(event)">
+                <br><br><br>
+                
+                <label id="l3" for="people">Number of People</label>  <br> <br>
+                <img id="img2" src="images/contact.jpg">
+                <input type="text" id="txt2" placeholder="0"><br>
+
+            </div>
+
+            <div class="outptcont">
+                <label id="l4" for="TipAmount">Tip Amount<h6>/person</h6></label> 
+                <input type="text" id="txt3" value="$0.00"><br>
+
+                <label id="l5" for="Total">Total<h6>/person</h6></label> 
+                <input type="text" id="txt4" value="$0.00"><br>
+                <button type="reset" id="rb">RESET</button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
